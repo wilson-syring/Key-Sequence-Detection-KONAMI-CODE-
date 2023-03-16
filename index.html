@@ -44,7 +44,7 @@
 
     </style>
 </head>
-<body class="Background">
+<body>
 <audio id="pop">
     <source src="01 Contra (Title).mp3" type="audio/mpeg">
 </audio>
@@ -57,8 +57,8 @@
     "use strict";
 
     function konami() {
-        var code = "3838404037393739666513"
-        var input = "";
+        const code = "3838404037393739666513"
+        let input = "";
         $(document).keyup(function (event) {
             console.log(event.keyCode);
             input += ("" + event.keyCode);
